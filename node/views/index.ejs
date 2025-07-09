@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Cycle</title>
+</head>
+<body>
+  <h1>Full Cycle</h1>
+  <% if (people.length > 0) { -%>
+    <ul>
+      <% people.forEach((person) => { -%>
+      <li><%= person.name %></li>
+      <% }); -%>
+    </ul>
+  <% } -%>
+</body>
+</html>
