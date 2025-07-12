@@ -23,6 +23,8 @@ services:
       MYSQL_PASSWORD: admin
       MYSQL_DATABASE: fullcycle
       MYSQL_PORT: 3306
+    volumes:
+      - ./node:/app
     depends_on:
       - mysql
     expose:
